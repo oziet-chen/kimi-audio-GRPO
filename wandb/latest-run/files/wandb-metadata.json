@@ -1,0 +1,138 @@
+{
+  "os":  "Linux-5.15.0-130-generic-x86_64-with-glibc2.35",
+  "python":  "3.12.3",
+  "startedAt":  "2025-07-17T11:27:27.220480Z",
+  "args":  [
+    "--model_name_or_path",
+    "/root/autodl-tmp/models/Kimi-Audio-7B-Instruct",
+    "--dataset_name",
+    "/root/autodl-tmp/dataset/start/material/val60_km_val_grponothink_semantic_codes.jsonl",
+    "--model_max_length",
+    "8192",
+    "--max_completion_length",
+    "256",
+    "--bf16",
+    "True",
+    "--output_dir",
+    "/root/autodl-tmp/dataset/output/MAP-GRPO_TEST6",
+    "--num_train_epochs",
+    "1",
+    "--per_device_train_batch_size",
+    "1",
+    "--gradient_accumulation_steps",
+    "1",
+    "--save_strategy",
+    "steps",
+    "--save_steps",
+    "100",
+    "--save_total_limit",
+    "5",
+    "--learning_rate",
+    "1e-6",
+    "--weight_decay",
+    "0.01",
+    "--lr_scheduler_type",
+    "cosine",
+    "--len_control",
+    "false",
+    "--weighted_reward",
+    "false",
+    "--beta",
+    "0.001",
+    "--max_grad_norm",
+    "5",
+    "--save_only_model",
+    "true",
+    "--attn_implementation",
+    "flash_attention_2",
+    "--model_type",
+    "kimi",
+    "--logging_steps",
+    "1",
+    "--report_to",
+    "wandb",
+    "--num_generations",
+    "8",
+    "--gradient_checkpointing",
+    "True",
+    "--run_name",
+    "MAP-GRPO_TEST6",
+    "--deepspeed",
+    "finetune_codes/ds_config_zero3.json"
+  ],
+  "program":  "/root/autodl-tmp/Kimi-Audio-master-grpo1/grpo.py",
+  "codePath":  "grpo.py",
+  "root":  "/root/autodl-tmp/Kimi-Audio-master-grpo1",
+  "host":  "autodl-container-b31545909a-5ac4da62",
+  "username":  "root",
+  "executable":  "/root/miniconda3/bin/python",
+  "codePathLocal":  "grpo.py",
+  "cpu_count":  64,
+  "cpu_count_logical":  128,
+  "gpu":  "[NVIDIA H20, NVIDIA H20, NVIDIA H20, NVIDIA H20, NVIDIA H20, NVIDIA H20, NVIDIA H20, NVIDIA H20]",
+  "gpu_count":  8,
+  "disk":  {
+    "/":  {
+      "total":  "32212254720",
+      "used":  "8141762560"
+    }
+  },
+  "memory":  {
+    "total":  "1330811772928"
+  },
+  "cpu":  {
+    "count":  64,
+    "countLogical":  128
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA H20",
+      "memoryTotal":  "102625181696",
+      "cudaCores":  9984,
+      "architecture":  "Hopper"
+    },
+    {
+      "name":  "NVIDIA H20",
+      "memoryTotal":  "102625181696",
+      "cudaCores":  9984,
+      "architecture":  "Hopper"
+    },
+    {
+      "name":  "NVIDIA H20",
+      "memoryTotal":  "102625181696",
+      "cudaCores":  9984,
+      "architecture":  "Hopper"
+    },
+    {
+      "name":  "NVIDIA H20",
+      "memoryTotal":  "102625181696",
+      "cudaCores":  9984,
+      "architecture":  "Hopper"
+    },
+    {
+      "name":  "NVIDIA H20",
+      "memoryTotal":  "102625181696",
+      "cudaCores":  9984,
+      "architecture":  "Hopper"
+    },
+    {
+      "name":  "NVIDIA H20",
+      "memoryTotal":  "102625181696",
+      "cudaCores":  9984,
+      "architecture":  "Hopper"
+    },
+    {
+      "name":  "NVIDIA H20",
+      "memoryTotal":  "102625181696",
+      "cudaCores":  9984,
+      "architecture":  "Hopper"
+    },
+    {
+      "name":  "NVIDIA H20",
+      "memoryTotal":  "102625181696",
+      "cudaCores":  9984,
+      "architecture":  "Hopper"
+    }
+  ],
+  "cudaVersion":  "12.7"
+}
